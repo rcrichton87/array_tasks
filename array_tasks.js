@@ -18,9 +18,13 @@ var arrayTasks = {
 		return arr;
 	},
 
-	// square: function (arr) {
-		
-	// },
+	square: function (arr) {
+		var outputArray = [];
+		arr.forEach(function(number){
+			 outputArray.push(number * number);
+		})
+		return outputArray;
+	},
 
 	// sum: function (arr) {
 		
