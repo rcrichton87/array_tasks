@@ -71,9 +71,19 @@ var arrayTasks = {
 		return outputArray;
 	},
 
-	// sumOfAllEvenNumbersSquared: function (arr) {
-		
-	// }
+	sumOfAllEvenNumbersSquared: function (arr) {
+		var evenNumbers = [];
+		arr.forEach(function(number){
+			if(number % 2 === 0){
+				evenNumbers.push(number);
+			}
+		})
+		var total = 0;
+		evenNumbers.forEach(function(number){
+			total += (number*number);
+		})
+		return total;
+	}
 
 }
 
