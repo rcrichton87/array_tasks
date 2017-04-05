@@ -7,9 +7,16 @@ var arrayTasks = {
 		return arr1;
 	},
 
-	// insertAt: function (arr, itemToAdd, index) {
-		
-	// },
+	insertAt: function (arr, itemToAdd, index) {
+		var oldItem = arr[index];
+		arr[index] = itemToAdd;
+		if(arr[index + 1]){
+			this.insertAt(arr, oldItem, index + 1);
+		} else {
+			arr[index + 1] = oldItem;
+		}
+		return arr;
+	},
 
 	// square: function (arr) {
 		
