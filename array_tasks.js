@@ -34,9 +34,22 @@ var arrayTasks = {
 		return total;
 	},
 
-	// findDuplicates: function (arr) {
-		
-	// },
+	findDuplicates: function (arr) {
+		var outputArray = [];
+
+		var checkArray = arr;
+			
+		while (checkArray.length !== 0){
+			var number = checkArray.shift();
+			if (checkArray.includes(number)){
+				if(!outputArray.includes(number)){
+					outputArray.push(number);
+				}
+			}
+		}
+
+		return outputArray;
+	},
 
 	// removeAndClone: function (arr, valueToRemove) {
 		
