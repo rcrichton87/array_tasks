@@ -78,11 +78,10 @@ var arrayTasks = {
 				evenNumbers.push(number);
 			}
 		})
-		var total = 0;
-		evenNumbers.forEach(function(number){
-			total += (number*number);
-		})
-		return total;
+		
+
+		var squaredArray = this.square(evenNumbers)
+		return this.sum(squaredArray)
 	}
 
 }
